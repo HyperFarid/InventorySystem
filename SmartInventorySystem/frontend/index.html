@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Inventory Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Inventory System</h1>
+    </header>
+    <main>
+        <section id="inventory-section">
+            <h2>Inventory</h2>
+            <ul id="inventory-list"></ul>
+        </section>
+        <section id="add-item-section">
+            <h2>Add Item</h2>
+            <form id="add-item-form">
+                <input type="text" id="item-name" placeholder="Name" required>
+                <input type="text" id="item-description" placeholder="Description">
+                <input type="number" id="item-quantity" placeholder="Quantity" required>
+                <input type="number" id="item-price" placeholder="Price" required step="0.01">
+                <button type="submit">Add Item</button>
+            </form>
+        </section>
+    </main>
+    <script src="scripts.js" type="module"></script>
+</body>
+</html>
